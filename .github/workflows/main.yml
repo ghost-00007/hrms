@@ -22,6 +22,7 @@ jobs:
         run: |
           if [ ! -d "${PROJECT_NAME}/.git" ]; then
             echo "Cloning repository into ${PROJECT_NAME}..."
+            mkdir /root/apps/${PROJECT_NAME}}
             git clone $GIT_REPO $PROJECT_NAME
           else
             echo "Repository already cloned. Pulling latest changes..."
